@@ -1,3 +1,27 @@
+# ⚠️ This repository now serves a PREBUILT site from the repo root
+
+`index.html`, `_next/`, `images/`, `services/`, `areas/`, `sitemap-*.xml` and `robots.txt`
+at the root of this repository are the **built output** of the Next.js project (also in this repo).
+
+Why: the Cloudflare Pages project was publishing the raw repo root and skipping the build, so `/`
+returned 404. With the built site committed at the root, Cloudflare Pages serves a working website with
+**no build command and no build-output-directory setting at all**.
+
+**Do not delete the root-level folders** (`about/`, `areas/`, `contact/`, `services/`, `site-directory/`,
+`terms/`, `thank-you/`, `privacy-policy/`, `_next/`, `images/`, the `sitemap-*.xml` files, `index.html`,
+`404.html`, `robots.txt`, `_headers`). They are the live website.
+
+To regenerate them after a source change:
+
+```bash
+npm ci
+npm run build                 # writes ./out
+cp -a out/. .                 # copy the build over the repo root
+git add -A && git commit -m "Rebuild static site" && git push
+```
+
+---
+
 # First Responder Garage Doors — programmatic SEO site
 
 Static, zero-JS, 14,264-page Next.js site for a pay-per-call garage door offer.

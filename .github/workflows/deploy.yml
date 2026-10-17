@@ -16,9 +16,10 @@
 name: Deploy to Cloudflare Pages
 
 on:
+  # Manual only: the built site is committed at the repo root, so Cloudflare's
+  # Git integration can serve it with no build step. Run this workflow only if
+  # you later fix the Pages build settings and want CI-built output instead.
   workflow_dispatch:
-  push:
-    branches: [main]
 
 concurrency:
   group: pages-deploy
