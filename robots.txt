@@ -3,4 +3,4 @@ Allow: /
 Disallow: /thank-you/
 
 Sitemap: https://first-responder-garage-doors.pages.dev/sitemap.xml
-Sitemap: https://first-responder-garage-doors.pages.dev/image-sitemap.xml
+Sitemap: https://first-responder-garage-doors.pages.dev/sitemap.txt

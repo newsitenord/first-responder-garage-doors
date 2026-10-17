@@ -53,7 +53,7 @@ for (const p of files) {
     continue;
   }
 
-  if (ext === ".txt" && path.basename(p) !== "robots.txt") {
+  if (ext === ".txt" && path.basename(p) !== "robots.txt" && path.basename(p) !== "sitemap.txt") {
     fs.unlinkSync(p);
     removedTxt++;
     continue;

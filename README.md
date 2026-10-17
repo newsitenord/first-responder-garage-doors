@@ -8,7 +8,7 @@ returned 404. With the built site committed at the root, Cloudflare Pages serves
 **no build command and no build-output-directory setting at all**.
 
 **Do not delete the root-level folders** (`about/`, `areas/`, `contact/`, `services/`, `site-directory/`,
-`terms/`, `thank-you/`, `privacy-policy/`, `_next/`, `images/`, the `sitemap-*.xml` files, `index.html`,
+`terms/`, `thank-you/`, `privacy-policy/`, `_next/`, `images/`, `sitemap.xml`, `sitemap.txt`, `image-sitemap.xml`, `index.html`,
 `404.html`, `robots.txt`, `_headers`). They are the live website.
 
 To regenerate them after a source change:

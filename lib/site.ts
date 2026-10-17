@@ -10,7 +10,7 @@ export const SITE = {
   tagline: "Nationwide garage door & opener repair, installation and maintenance",
   hours: "24/7 emergency dispatch · Office Mon–Sat 7:00 AM – 8:00 PM",
   warranty: "1-year workmanship warranty on qualifying repairs",
-  gscVerification: "9PT-7-EXbP8-UGnEKPcJcqD7IrU_dBzjOp_0aSJzsMc",
+  gscVerification: "YMPN8C03Os8v5r1ChNT13G1MbjIwIdY4HoYsCicaCUw",
   foundedYear: 2026,
   serviceRadiusMiles: 35,
   responseWindow: "Same-day and next-day appointments",
