@@ -1,0 +1,18 @@
+[
+  { "slug": "garage-door-repair", "name": "Garage Door Repair", "category": "repair" },
+  { "slug": "garage-door-installation", "name": "Garage Door Installation", "category": "installation" },
+  { "slug": "garage-door-replacement", "name": "Garage Door Replacement", "category": "installation" },
+  { "slug": "garage-door-spring-repair", "name": "Garage Door Spring Repair", "category": "repair" },
+  { "slug": "garage-door-opener-repair", "name": "Garage Door Opener Repair", "category": "repair" },
+  { "slug": "garage-door-opener-installation", "name": "Garage Door Opener Installation", "category": "installation" },
+  { "slug": "garage-door-cable-repair", "name": "Garage Door Cable Repair", "category": "repair" },
+  { "slug": "garage-door-panel-repair", "name": "Garage Door Panel Repair", "category": "repair" },
+  { "slug": "garage-door-tune-up", "name": "Garage Door Tune-Up", "category": "maintenance" },
+  { "slug": "emergency-garage-door-repair", "name": "Emergency Garage Door Repair", "category": "emergency" },
+  { "slug": "garage-door-off-track-repair", "name": "Garage Door Off-Track Repair", "category": "repair" },
+  { "slug": "garage-door-bottom-seal-replacement", "name": "Garage Door Bottom Seal Replacement", "category": "repair" },
+  { "slug": "residential-garage-door-installation", "name": "Residential Garage Door Installation", "category": "installation" },
+  { "slug": "commercial-garage-door-repair", "name": "Commercial Garage Door Repair", "category": "commercial" },
+  { "slug": "commercial-garage-door-installation", "name": "Commercial Garage Door Installation", "category": "commercial" },
+  { "slug": "smart-garage-door-opener-installation", "name": "Smart Garage Door Opener Installation", "category": "installation" }
+]
