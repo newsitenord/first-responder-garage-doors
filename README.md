@@ -58,11 +58,16 @@ scripts/
 
 1. Push this repo to GitHub (already done).
 2. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git** → pick the repo.
-3. Settings:
-   - **Framework preset:** `None` (or Next.js static — either works)
-   - **Build command:** `npm run build`
-   - **Build output directory:** `out`
-   - **Node version:** 20 (`.nvmrc` is included)
+3. Settings (**Framework preset must be `None`** — the "Next.js" preset runs
+   `@cloudflare/next-on-pages`, which cannot build a static export):
+   - Build command: `npm ci && npm run build`
+   - Build output directory: `out`
+   - Node version: 20 (`.node-version`, `.nvmrc` and `engines` are all pinned)
+   - Environment variables: `NODE_OPTIONS=--max-old-space-size=6144`
+
+   Do **not** add a `wrangler.toml` with `pages_build_output_dir`: when Pages sees it, it ignores the
+   dashboard build command (Pages wrangler config has no build-command field) and the build step is
+   skipped entirely. See `DEPLOY.md` for the full post-mortem.
 4. **Name the project `first-responder-garage-doors`** so the live URL matches the canonical
    `https://first-responder-garage-doors.pages.dev`. If you use a different project name, set
    `NEXT_PUBLIC_SITE_URL` in the Pages environment variables to the real URL before the first build —
