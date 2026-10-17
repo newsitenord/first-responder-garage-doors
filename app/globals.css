@@ -475,3 +475,12 @@ table.price tbody tr:nth-child(even) { background: #fcfdfe; }
 @media (max-width: 640px) {
   .prose .svc-grid { grid-template-columns: 1fr; }
 }
+
+.hero-city { display: flex; align-items: center; gap: 8px; }
+.hero-city::before { content: ""; width: 16px; height: 1px; background: var(--amber); display: inline-block; }
+@media (max-width: 860px) {
+  .hero-points { display: none; }
+  .hero { min-height: 0; }
+  .hero-in { padding: 38px 22px 34px; }
+  .hero-city { margin-top: 14px; font-size: 13.5px; color: #cbdae6; }
+}

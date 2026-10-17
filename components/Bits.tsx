@@ -66,7 +66,7 @@ export function Hero({
           <li>Licensed, insured local technicians</li>
           <li>24/7 emergency dispatch</li>
         </ul>
-        {city && <p className="hero-city">Serving {city} and surrounding communities</p>}
+        <p className="hero-city">{city ? `Serving ${city} and surrounding communities` : "Nationwide dispatch · 836 cities · 28 states"}</p>
       </div>
     </section>
   );
